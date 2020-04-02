@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html class = "joschro-website">
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=760">
+<style>
+
+
+@import url(style.v2.css);
+
+.preview {
+  border: solid 1px #ccc;
+  height: 80px;
+  margin-bottom: .5em;
+  width: 720px;
+}
+
+.date {
+  color: #636363;
+  font-family: "PT Sans", sans-serif;
+  font-size: smaller;
+  margin: 2px 0 0 480px;
+  position: absolute;
+  text-align: right;
+  width: 240px;
+}
+
+.nytimes:before,
+.medium:before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+
+.nytimes:before {
+  background-image: url(nytimes.png);
+  background-size: contain;
+}
+
+.medium:before {
+  background-image: url(medium.png);
+  background-size: 24px 24px;
+  background-position: -4px -4px;
+  left: -2px;
+}
+</style>
 <body>
-
-<h1>My First Heading!</h1>
-
-<h2>My name is Joanna Schroeder and I am trying to make a website</h2>
-  
-<p>Is it going properly????</p>
-
-<p>Hi Alexis! This will be on the website</p>  
-  
+  <header>br</header>
+  <h1>Joanna Schroeder</h1>
+  <p>"Welcome to my website!"</p>
+  <h2>Projects</h2>
+  <p><span class = "medium date">
+    "Civil Legal Aid"
+  </p>
 </body>
 </html>
