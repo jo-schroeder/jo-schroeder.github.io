@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "Joanna"
-title_right   : "" # default: ""
+title_left    : "@data"
+title_right   : "tutorials"
 description   : ""
 keywords      : ""
 url           : https://joschro.com # site url
