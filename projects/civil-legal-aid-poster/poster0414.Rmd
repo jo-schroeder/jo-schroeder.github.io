@@ -1,0 +1,83 @@
+---
+title: Access to Justice for All People? An Investigation of the Factors Driving the
+  Distribution of Civil Legal Aid Grants
+author:
+  name: Joanna Schroeder, William & Mary
+output: posterdown::posterdown_html
+permalink: /civil-legal-aid-poster/
+---
+<style>
+.section h4 {
+    break-before: column;
+    }
+</style>
+
+```{r message = FALSE, warning = FALSE, results = FALSE, include = FALSE}
+library(glmnet)
+library(foreach)
+library(pROC)
+library(ggplot2)
+library(ggfortify)
+library(ggpubr)
+library(gridExtra)
+library(stargazer)
+library(dplyr)
+library(grid)
+library(gganimate)
+library(gifski)
+library(png)
+
+dataset <- read.csv(file="/cloud/project/final.einswithindicators.csv")
+
+dataset <- dataset %>% mutate(org_revenue = log(org_revenu), amt_grants_log = log(amt_grants), RURALPOP10PER = (RURALPOP10/TOTPOP10)*100, MINORITYPOP10PER = (MINORITY10/TOTPOP10)*100)
+
+dataset.scale <- dataset %>% mutate_each(funs(scale(.) %>% as.vector), vars = c("org_revenue", "CJS_house", "CJS_house_", "CJS_senate", "CJS_sena_1", "gov_pres_p", "pop_dens", "HIGHSCHOOL", "FOREI_BORN", "NOT_ENG_HO", "VETERAN", "RENT_UNIT", "FIXBB", "POVERTY", "POVERTY125", "UNDER18", "OVER59", "competition_10", "competition_30", "RURALPOP10PER",  "MINORITYPOP10PER")) %>% rename("ORG_REVENUE" = "org_revenue", "CJS_HOUSE" = "CJS_house", "CJS_HOUSE_RANK" = "CJS_house_", "CJS_SENATE" = "CJS_senate", "CJS_SENATE_RANK" = "CJS_sena_1", "GOV_PRES" = "gov_pres_p", "POP_DENS" = "pop_dens", "COMPETITION10" = "competition_10", "COMPETITION30" = "competition_30", "RURAL" = "RURALPOP10PER", "MINORITY" = "MINORITYPOP10PER", "AMT_GRANTS" = "amt_grants_log", "AMT_LSC_GRANTS" = "amt_LSC_gr", "YEAR" = "year_") %>% select("Latitude", "Longitude", "ein", "YEAR", "org_outlier", "AMT_GRANTS", "LSC", "AMT_LSC_GRANTS", "ORG_REVENUE","COMPETITION10", "COMPETITION30", "CJS_HOUSE", "CJS_HOUSE_RANK", "CJS_SENATE", "CJS_SENATE_RANK", "GOV_PRES", "POP_DENS", "HIGHSCHOOL", "FOREI_BORN", "NOT_ENG_HO", "VETERAN", "RENT_UNIT", "FIXBB", "POVERTY", "POVERTY125", "UNDER18", "OVER59", "RURAL",  "MINORITY")
+```
+
+
+# What is civil legal aid?
+Access to civil legal justice in the United States is largely an invisible issue, though it affects approximately 70 percent of low-income households each year. This study is concerned with investigating the political, need-based, and capacity factors that drive the allocation of civil legal aid grants to organizations.
+
+# Background and Introduction
+
+# Literature Review
+
+####
+
+# Data and Methods
+
+# Analysis
+
+``` {r message = FALSE, warning = FALSE, include = FALSE}
+d <- dataset.scale %>% filter(org_outlier == FALSE)
+attach(d)
+f <- AMT_GRANTS ~ ORG_REVENUE + CJS_HOUSE + CJS_HOUSE_RANK + CJS_SENATE + CJS_SENATE_RANK + GOV_PRES + POP_DENS + FIXBB + HIGHSCHOOL +  FOREI_BORN + NOT_ENG_HO + VETERAN + RENT_UNIT + POVERTY + POVERTY125 + UNDER18 + OVER59 + COMPETITION10 + COMPETITION30 + RURAL + MINORITY
+y <- d$AMT_GRANTS
+X <- model.matrix(f, d)
+n <- length(y)
+
+cv1 <- cv.glmnet(X, y, nfold = 100, type.measure = "deviance", paralle = TRUE, alpha = 1)
+lassomod <- glmnet(X, y, lambda = cv1$lambda.1se, alpha = 1)
+cv1.glmnet.fit <- (cv1$glmnet.fit)
+tmp_coeffs <- coef(cv1.glmnet.fit, s = cv1$lambda.1se)
+lassotable <- data.frame(name = tmp_coeffs@Dimnames[[1]][tmp_coeffs@i + 1], coefficient = tmp_coeffs@x)
+lassotable[order(-lassotable$coefficient),]
+
+lassoplot <- autoplot(cv1$glmnet.fit, "lambda", label = TRUE, main = "LASSO (alpha = 1)") + ylim(-1,1.5) + theme(legend.position="none") + theme(legend.title = element_text(size=20)) + theme(legend.text = element_text(size = 18)) + geom_vline(mapping = NULL, data = NULL, xintercept = log(cv1$lambda.1se), na.rm = FALSE, show.legend = FALSE)
+
+ani_figure <- lassoplot +
+  transition_reveal(Lambda)
+
+write
+```
+
+
+####
+
+# Results
+
+# Discussion
+
+# Conclusion
+
+# References
