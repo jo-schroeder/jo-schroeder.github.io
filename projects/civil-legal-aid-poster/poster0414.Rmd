@@ -4,7 +4,7 @@ title: Access to Justice for All People? An Investigation of the Factors Driving
 author:
   name: Joanna Schroeder, William & Mary
 output: posterdown::posterdown_html
-permalink: /civil-legal-aid-poster/
+permalink: projects/civil-legal-aid-poster/
 ---
 <style>
 .section h4 {
