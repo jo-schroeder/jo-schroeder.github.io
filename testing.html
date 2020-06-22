@@ -18,6 +18,26 @@ var svg = d3.select("svg"),
 
 // Map and projection
 var path = d3.geoPath();
+       .on('mouseover', function (d, i) {
+          d3.select(this).transition()
+               .duration('50')
+               .attr('opacity', '.85');
+          div.transition()
+               .duration(50)
+               .style("opacity", 1);
+          let num = (Math.round((d.value / d.data.all) * 100)).toString() + '%';
+          div.html(num)
+               .style("left", (d3.event.pageX + 10) + "px")
+               .style("top", (d3.event.pageY - 15) + "px");
+     })
+     .on('mouseout', function (d, i) {
+          d3.select(this).transition()
+               .duration('50')
+               .attr('opacity', '1');
+          div.transition()
+               .duration('50')
+               .style("opacity", 0);
+     });
 var projection = d3.geoMercator()
   .scale(70)
   .center([0,20])
@@ -52,26 +72,6 @@ function ready(error, topo) {
         d.total = data.get(d.id) || 0;
         return colorScale(d.total);
       });
-    
-         .on('mouseover', function (d, i) {
-          d3.select(this).transition()
-               .duration('50')
-               .attr('opacity', '.85');
-          div.transition()
-               .duration(50)
-               .style("opacity", 1)
-         })
-        .on('mouseout', function (d, i) {
-          d3.select(this).transition()
-               .duration('50')
-               .attr('opacity', '1');
-          div.transition()
-               .duration('50')
-               .style("opacity", 0)
-        })
-
-
-})
     }
 
 </script>
