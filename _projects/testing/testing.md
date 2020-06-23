@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <meta category = "Projects">
 <meta title = "Testing">
+<meta layout = "post">
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
