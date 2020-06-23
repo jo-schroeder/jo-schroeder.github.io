@@ -1,3 +1,9 @@
+---
+Category: Projects
+Title: Testing
+Permalink: /projects/testing
+---
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 
