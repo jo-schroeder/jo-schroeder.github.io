@@ -1,7 +1,7 @@
 ---
+Layout: default
 Category: Projects
 Title: Testing
-Permalink: /projects/testing
 ---
 
 <!DOCTYPE html>
