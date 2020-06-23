@@ -5,6 +5,7 @@ author:
   name: Joanna Schroeder, William & Mary
 output: posterdown::posterdown_html
 permalink: projects/civil-legal-aid-poster/
+category: Projects
 ---
 <style>
 .section h4 {
