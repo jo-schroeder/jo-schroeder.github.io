@@ -42,7 +42,6 @@ function ready(error, topo) {
       .attr("d", d3.geoPath()
         .projection(projection)
       )
-
       .attr("fill", function (d) {
         d.total = data.get(d.id) || 0;
         return colorScale(d.total);
