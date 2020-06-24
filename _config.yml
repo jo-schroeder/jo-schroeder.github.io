@@ -44,8 +44,7 @@ navbar:
     
 # Add collections
 collections:
-  Projects:
-    project: true
+  projects:
 
 exclude:
   - "gulp"
