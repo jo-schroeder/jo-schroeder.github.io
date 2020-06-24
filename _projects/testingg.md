@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 name: Testing
 custom-javascript-list:
   - "https://d3js.org/d3.v4.js"
