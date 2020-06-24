@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<meta categories = Projects>
-<meta title = "Testing">
-<meta layout = "post">
+---
+layout: post
+title: "Testing"
+description: "a test"
+comments: true
+categories: Projects
+---
 
-<!-- Load d3.js -->
+Hello hello
+
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>

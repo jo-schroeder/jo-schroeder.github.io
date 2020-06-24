@@ -14,7 +14,7 @@ disqus_shortname  : ""
 postshare_enabled : false
 
 # Build settings
-permalink   : /:year/:title/
+permalink   : pretty
 markdown    : kramdown
 highlighter : rouge
 
@@ -41,6 +41,11 @@ navbar:
     title: About
   - slug : blog
     title: Blog
+    
+# Add collections
+collections:
+  Projects:
+    project: true
 
 exclude:
   - "gulp"
