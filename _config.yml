@@ -41,6 +41,11 @@ navbar:
     title: About
   - slug : blog
     title: Blog
+    
+# Add collections
+collections:
+  Projects:
+    project: true
 
 exclude:
   - "gulp"
