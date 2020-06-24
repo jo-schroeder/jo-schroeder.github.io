@@ -38,7 +38,6 @@ function ready(error, topo) {
     .data(topo.features)
     .enter()
     .append("path")
-      // draw each country
       .attr("d", d3.geoPath()
         .projection(projection)
       )
