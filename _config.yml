@@ -45,6 +45,7 @@ navbar:
 # Add collections
 collections:
   projects:
+    output: true
 
 exclude:
   - "gulp"
