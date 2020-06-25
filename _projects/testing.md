@@ -1,6 +1,6 @@
 ---
 layout: page
-name: Testing
+name: Regularization and feature selection: The case of Medicaid Expansion
 custom-javascript-list:
   - "https://d3js.org/d3.v4.js"
   - "https://d3js.org/d3-scale-chromatic.v1.min.js"
