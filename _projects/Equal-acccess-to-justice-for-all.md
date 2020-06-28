@@ -2,18 +2,18 @@
 layout: page
 name: Equal access to justice for all people??
 custom-javascript-list:
-  - "assets/poster0416_files/htmlwidgets-1.5.1/htmlwidgets.js"
-  - "assets/poster0416_files/jquery-1.12.4/jquery.min.js"
-  - "assets/poster0416_files/leaflet-1.3.1/leaflet.js"
-  - "assets/poster0416_files/Proj4Leaflet-1.0.1/proj4-compressed.js"
-  - "assets/poster0416_files/Proj4Leaflet-1.0.1/proj4leaflet.js"
-  - "assets/poster0416_files/leaflet-binding-2.0.3/leaflet.js"
-  - "assets/poster0416_files/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"
-  - "assets/poster0416_files/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"
-  - "assets/poster0416_files/plotly-binding-4.9.2.1/plotly.js"
-  - "assets/poster0416_files/typedarray-0.1/typedarray.min.js"
-  - "assets/poster0416_files/crosstalk-1.1.0.1/js/crosstalk.min.js"
-  - "assets/poster0416_files/plotly-main-1.52.2/plotly-latest.min.js"
+  - "poster0416_files/htmlwidgets-1.5.1/htmlwidgets.js"
+  - "poster0416_files/jquery-1.12.4/jquery.min.js"
+  - "poster0416_files/leaflet-1.3.1/leaflet.js"
+  - "poster0416_files/Proj4Leaflet-1.0.1/proj4-compressed.js"
+  - "poster0416_files/Proj4Leaflet-1.0.1/proj4leaflet.js"
+  - "poster0416_files/leaflet-binding-2.0.3/leaflet.js"
+  - "poster0416_files/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"
+  - "poster0416_files/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"
+  - "poster0416_files/plotly-binding-4.9.2.1/plotly.js"
+  - "poster0416_files/typedarray-0.1/typedarray.min.js"
+  - "poster0416_files/crosstalk-1.1.0.1/js/crosstalk.min.js"
+  - "poster0416_files/plotly-main-1.52.2/plotly-latest.min.js"
 ---
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -38,11 +38,11 @@ Google fonts api stuff
 
 <title>Equal Access to Justice for All People? An Investigation of the Factors Driving the Distribution of Civil Legal Aid Grants</title>
 
-<link href="assets/poster0416_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<link href="assets/poster0416_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<link href="assets/poster0416_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<link href="assets/poster0416_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<link href="assets/poster0416_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<link href="poster0416_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<link href="poster0416_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="poster0416_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<link href="poster0416_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<link href="poster0416_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
 
 <style>
 @page {
