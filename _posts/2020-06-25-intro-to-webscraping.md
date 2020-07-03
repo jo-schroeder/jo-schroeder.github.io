@@ -7,32 +7,37 @@ keywords: "websraping, text mining, wordclouds"
 categories: blog
 ---
 
-*Note: This post is adapted from from a presentation I gave in the summer of 2019 for the Legal Services Corporation. Every intern had to give a presentation and I chose to show a tutorial of an awesome skill I had learned that summer, webscraping!*
+*Note: This post is adapted from my internship presentation in the summer of 2019 for the Legal Services Corporation. At LSC, every intern gives a presentation for the whole office of what they accomplished that summer. I wanted to make my presentation interactive, so I decided to present a tutorial of an awesome skill I had learned that summer, webscraping!*
 
 ## Who am I?
 
-- Joanna Schroeder, ODGA Intern
-- Study Government and Public Health
-- Started my data journey 1 year ago!
-  - GIS for Social Science
-  - Data Science and Politics
-  - LSC Intern!
+Hello! I am Joanna and I hope to show you how to solve a problem like a data scientist. For me, it is important to contextualize information with the background of the informant. Knowing the presenter's story helps me to connect to topics more deeply. Hopefully it will help you too!
+
+In the summer of 2019 I was an intern for the Legal Services Corporation in their Office of Data Governance and Analysis. LSC is the nation's largest funder of civil legal aid to legal aid organizations. Interning at LSC was an amazing opprotunity to grow my data science skills. When I began my internship, I had only been coding for half a year and I wasn't sure if I would be able to keep up with *"real data people."*
+
+Luckily, though, because I had a supportive environment at ODGA I was able to grow so much as a data scientist and gain skills I thought were completely out of my reach. One of these skills was webscraping, which I will one of the methods for today's tutorial.
+
+I begin with this background because I truly believe that data science skills are within reach for *everyone*. Hopefully, during the time I have your attention, you will also see that thinking like a data scientist is something you can incorporate into your life.
 
 ## What is this?
 
-- slidy presentation feat. code
-- goal: teach something fun!
-- DON'T GET LOST IN THE SAUCE
+Like I said earlier, this is a tutorial on how to solve a problem like a data scientist. My main goal is to solve a problem together while having fun! In today's approach, we will be using code. If you are someone who doesn't have experience with code, my advice is this: **don't get lost in the sauce**. Hopefully I can keep things at a high level to reach everyone.
 
 ## We have a problem
 
 https://www.lsc.gov/what-legal-aid/client-success-stories
 
+LSC collects client success stories to show the individual impact of civil legal aid. How can we analyze and visualize patterns in the client success stories of LSC?
+
 ## Plan of action
+
+Thinking through our box of data science tools, what steps and methods do we need to take and use to solve our problem?
 
 1. Get the stories from the website into a text format we can work with (Webscraping)
 2. Clean the messy text and analyze it (Natural Language Processing)
 3. Visualize it (Wordcloud-ing)
+
+Depending on our toolbox, we could come up with *MANY* plans (tons of which may not require code!). Thats's to say, there's single correct way to approach and solve a problem.
 
 ## Step 1: Webscraping
 
@@ -66,7 +71,6 @@ corpus <- tm_map(corpus, stripWhitespace)
 
 # Calculate the frequency of each word in the client stories
 dtm <- DocumentTermMatrix(corpus)
-
 ```
 
 ## Step 3.1: Visualization
@@ -75,7 +79,7 @@ dtm <- DocumentTermMatrix(corpus)
 # Create a wordcloud of the words by frequency
 wordcloud(names(frequency), frequency, max.words = 50)
 ```
-<img src="/assets/images/bw-wordcloud.png" alt="bw wordcloud">
+<img src="/assets/images/bw_wordcloud.png" alt="bw wordcloud">
 
 ## Step 3.2: If you want to get crazy
 
@@ -97,5 +101,5 @@ wordcloud(names(frequency), frequency,
 
 ## Key takeaways
 
-- I solved a problem like a data scientist!
+- I solved a problem like a data scientist! (And maybe it wasn't so hard!)
 - Maybe I'll try it again sometime
