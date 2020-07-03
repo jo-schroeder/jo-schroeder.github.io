@@ -5,3 +5,5 @@ description: "Understanding methods is an issue in data journalism"
 keywords: "Data journalism, methods, election, data literacy"
 categories: blog
 ---
+
+Repost from digital journalism blog
