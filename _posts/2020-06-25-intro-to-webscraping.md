@@ -36,7 +36,7 @@ https://www.lsc.gov/what-legal-aid/client-success-stories
 
 ## Step 1: Webscraping
 
-```{r webscraping, include = TRUE, echo = TRUE, warning = FALSE, class.source = 'jumbotron', font.family = 'Calibri'}
+```
 # Navigate to Client Stories Page and extract all the links
 page <- read_html("https://www.lsc.gov/what-legal-aid/client-success-stories") %>% html_nodes("a") %>% html_attr('href')
 
@@ -52,14 +52,11 @@ scrape <- function(x) {
 
 # Apply the function to all links
 stories <- lapply (urls, scrape)
-
-# Let's look at the first story
-print(head(stories, 1))
 ```
 
 ## Step 2: Natural Language Processing
 
-```{r NLP, include = TRUE, echo = TRUE, warning = FALSE, class.source = 'jumbotron', font.family = 'Calibri'}
+```
 # Remove punctuation, numbers, and uppercase letters from stories
 corpus <- Corpus(VectorSource(stories)) %>% tm_map(removePunctuation) %>% tm_map(removeNumbers) %>% tm_map(tolower)
 
@@ -70,21 +67,19 @@ corpus <- tm_map(corpus, stripWhitespace)
 # Calculate the frequency of each word in the client stories
 dtm <- DocumentTermMatrix(corpus)
 
-# Let's look at the least frequent words
-frequency <- sort(colSums(as.matrix(dtm)), decreasing=TRUE)
-tail(frequency, 10)
 ```
 
 ## Step 3.1: Visualization
 
-```{r wordcloud, echo=TRUE, fig.height=10, fig.width=10, warning=FALSE, include=TRUE, class.source = 'jumbotron'}
+```
 # Create a wordcloud of the words by frequency
 wordcloud(names(frequency), frequency, max.words = 50)
 ```
-<img src="/assets/images/bw-wordcloud.png" alt="bw wordcloud" style="height:140px;">
+<img src="/assets/images/bw-wordcloud.png" alt="bw wordcloud">
+
 ## Step 3.2: If you want to get crazy
 
-``` {r wordloud color, echo=TRUE, fig.height=10, fig.width=10, warning=FALSE, include=TRUE, class.source = 'jumbotron', font.family = 'Calibri'}
+```
 # Create a prettier wordcloud
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
@@ -98,7 +93,7 @@ wordcloud(names(frequency), frequency,
           main = "Title",
           colors = brewer.pal(8, "Dark2"))
 ```
-<img src="/assets/images/color_wordcloud.png" alt="color wordcloud" style="height:140px;">
+<img src="/assets/images/color_wordcloud.png" alt="color wordcloud">
 
 ## Key takeaways
 
