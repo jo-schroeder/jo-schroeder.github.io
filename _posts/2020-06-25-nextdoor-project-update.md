@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Analyzing the "No School Moves" movement on Nextdoor (Viz facelift)"
+title: "Analyzing the user generated conetent on the No School Moves movement (Viz facelift)"
 comments: true
 description: "An graphics update to a project analyzing text data from Nextdoor"
 keywords: "text mining, wordclouds, education"
@@ -28,4 +28,4 @@ I had two overall goals, then, for this project. My first goal was to analyze, o
 <img src = "/assets/images/nextdoor-bigrams.png" alt = "Nextdoor bigrams">
 <img src = "/assets/images/nextdoor-wordcloud.png" alt = "Nextdoor wordcloud">
 
-Here are my original graphics for this project. 
+Here are my original graphics for this project.
