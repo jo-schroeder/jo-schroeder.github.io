@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Analyzing the user generated conetent on the No School Moves movement (Viz facelift)"
+title: "Analyzing the user generated content on the No School Moves movement (Viz facelift)"
 comments: true
 description: "An graphics update to a project analyzing text data from Nextdoor"
 keywords: "text mining, wordclouds, education"
 categories: blog
 ---
 
-*Note: This is an update to a project I worked on in February 2019 for my Digital Journalism class portfolio. <a href="http://digitaljournalism.blogs.wm.edu/2020/02/03/analyzing-no-school-moves-campaign-arlington/"> The original article can be found here.</a> This post will focus on updating the graphics for that piece. The original article contains  more context for the "No School Moves" movement, school redistricting, and integration, and I would encourage anyone interested in those topics to check it out!*
+*Note: This is an update to a project I worked on in February 2019 for my Digital Journalism class portfolio.* <a href="http://digitaljournalism.blogs.wm.edu/2020/02/03/analyzing-no-school-moves-campaign-arlington/"> The original article can be found here.</a> *This post will focus on updating the graphics for that piece. The original article contains  more context for the "No School Moves" movement, school redistricting, and integration, and I would encourage anyone interested in those topics to check it out!*
 
 Time for a viz facelift!
 
@@ -23,9 +23,12 @@ I had two overall goals, then, for this project. My first goal was to analyze, o
 
 ## The Visuals
 
-<img src = "/assets/images/arl-now-bigrams.png" alt = "Arlington Now bigrams">
-<img src = "/assets/images/arl-now-wordcloud.png" alt = "Arlington Now wordcloud">
-<img src = "/assets/images/nextdoor-bigrams.png" alt = "Nextdoor bigrams">
-<img src = "/assets/images/nextdoor-wordcloud.png" alt = "Nextdoor wordcloud">
+<img src="/assets/images/arl-now-bigrams.png" alt="Arlington Now bigrams">
+
+<img src="/assets/images/arl-now-wordcloud.png" alt="Arlington Now wordcloud">
+
+<img src="/assets/images/nextdoor-bigrams.png" alt="Nextdoor bigrams">
+
+<img src="/assets/images/nextdoor-wordcloud.png" alt="Nextdoor wordcloud">
 
 Here are my original graphics for this project.
