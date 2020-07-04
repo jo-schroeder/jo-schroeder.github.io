@@ -81,7 +81,9 @@ wordcloud(names(frequency), frequency, max.words = 50)
 ```
 <img src="/assets/images/bw_wordcloud.png" alt="bw wordcloud">
 
-## Step 3.2: If you want to get crazy
+This visual is great and it does achieve goal of visualizing the patterns in the client success stories. But, the awesome thing about coding is its flexibility. With just a few more lines, we can clean up our visual and communicate more clearly.
+
+## Step 3.2: Cleaning it up
 
 ```
 # Create a prettier wordcloud
@@ -98,6 +100,8 @@ wordcloud(names(frequency), frequency,
           colors = brewer.pal(8, "Dark2"))
 ```
 <img src="/assets/images/color_wordcloud.png" alt="color wordcloud">
+
+Awesome! Obviously, there are still a few ways we could improve this visual. We could use our NLP skills to take out names of people or combine words with the same stem. Taking it a step further, we could even add interactive elements to this visual, like the ability to filter by a client story topic or hover over a word to see the frequency count. The possibilities are endless!
 
 ## Key takeaways
 
