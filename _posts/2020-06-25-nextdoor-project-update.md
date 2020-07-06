@@ -35,7 +35,7 @@ Here are my original graphics for this project. Let's talk about their strengths
 1. They mention the data source, which is something I often overlook in a low-stakes project
 2. The color palette for the wordclouds is nice
 
-And that's about it. These graphics get the job done, but they definitely don't turn any heads (unless your favorite color is orange). For the updated graphics, I hope to implement these changes.
+And that's about it. These graphics get the job done, but they definitely don't turn any heads (unless your favorite color is orange). I think for now, I'm going to focus on revamping the bar charts for this project. For the updated graphics, I hope to implement these changes.
 1. Clean up their look overall (rename axes, anything other than orange bars)
 2. Come up with a single viz that compares the two data sources
 3. Try to add inferential analysis to the viz
@@ -91,6 +91,6 @@ dtm %>%
 ```
 <img src= "assets/images/facelift_schoolmoves_graph.png" alt = "Facelift school moves graph">
 
-Awesome! I really like the updates I made to this project, especially taking the step to incorporate some inferential analysis into the viz. Of course, there's always more to be done with a project. In the future I could see myself heading back into Observable to try to add some interactive features to the viz. Or, I could even try a new method of analysis, like text networks. 
+Awesome! I really like the updates I made to this project, especially taking the step to incorporate some inferential analysis into the viz. Of course, there's always more to be done with a project. In the future I could see myself heading back into Observable to try to add some interactive features to the viz. Or, I could even try a new method of analysis, like text networks.
 
 Thanks for sticking with me and I hope you learned something!
