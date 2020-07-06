@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Analyzing the user generated content on the No School Moves movement (Viz facelift)"
+title: "Analyzing user generated content from the No School Moves movement (Viz facelift)"
 comments: true
-description: "An graphics update to a project analyzing text data from Nextdoor"
+description: "An graphics update to a project analyzing text data from Arlington Now and Nextdoor"
 keywords: "text mining, wordclouds, education"
 categories: blog
 ---
