@@ -89,7 +89,8 @@ dtm %>%
   ylab("Percent term frequency (e.g. 'mckinley' accounts for 2% of all terms in Nextdoor comments)") +
   theme_classic()
 ```
-<img src="assets/images/facelift_schoolmoves_graph.png" alt="Facelift school moves graph">
+
+<img src="/assets/images/facelift_schoolmoves_graph.png" alt="Facelift school moves graph">
 
 Awesome! I really like the updates I made to this project, especially taking the step to incorporate some inferential analysis into the viz. Of course, there's always more to be done with a project. In the future I could see myself heading back into Observable to try to add some interactive features to the viz. Or, I could even try a new method of analysis, like text networks.
 
