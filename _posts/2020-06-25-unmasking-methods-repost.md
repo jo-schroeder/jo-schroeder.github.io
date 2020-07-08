@@ -6,7 +6,7 @@ keywords: "Data journalism, methods, election, data literacy"
 categories: blog
 ---
 
-*Note: This is repost of an article I worked on in February 2019 for my Digital Journalism class portfolio.* <a href="http://digitaljournalism.blogs.wm.edu/2020/03/02/unmasking-methods-data-journalism/"> The original article can be found here.</a>
+*Note: This is repost of an article I worked on in March 2020 for my Digital Journalism class portfolio.* <a href="http://digitaljournalism.blogs.wm.edu/2020/03/02/unmasking-methods-data-journalism/"> The original article can be found here.</a>
 
 With the Democratic primary underway, voters are looking to political journalism for election recaps and predictions. Innovations in data journalism have made in-depth analyses more accessible than ever for the public. <a href="http://digitaljournalism.blogs.wm.edu/2020/02/17/coronavirus-disease-panic-lack-ethical-journalism/">In my last blog post</a>, I compared how different visualizations of the coronavirus outbreak can affect public response. In this post, I will be focusing on how data journalists use statistics and methods to inform their writing and attempts to openly discuss methods with a data-literate audience.
 
