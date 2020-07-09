@@ -31,4 +31,4 @@ plot +
   geom_point() +
   transition_reveal(Date)
 ```
-<img src = "/assets/images/dt_covid.gif" alt "COVID graph">
+<img src="/assets/images/dt_covid.gif" alt="COVID graph">

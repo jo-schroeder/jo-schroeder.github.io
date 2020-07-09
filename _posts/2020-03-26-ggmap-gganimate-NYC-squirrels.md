@@ -22,4 +22,5 @@ map <- qmplot(X, Y, data = data, colour = activity, main = "Central Park Squirre
 map + labs(subtitle ="Data from City of New York City 2018 Squirrel Census
 Date: {frame_time}", caption = "Created by Joanna @datatutorials") + transition_time(Date)
 ```
-<img src = "/assets/images/dt_squirrels.gif" alt = "Squirrel graph">
+
+<img src="/assets/images/dt_squirrels.gif" alt="Squirrel graph">
