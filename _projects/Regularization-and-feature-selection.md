@@ -1,10 +1,6 @@
 ---
 layout: page
 name: Applying Regularization for Efficient Feature Selection: The Case of State Medicaid Expansion
-custom-javascript-list:
-  - "https://d3js.org/d3.v4.js"
-  - "https://d3js.org/d3-scale-chromatic.v1.min.js"
-  - "https://d3js.org/d3-geo-projection.v2.min.js"
 ---
 A project with Phil Waggoner (University of Chicago)
 

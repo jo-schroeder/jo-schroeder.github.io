@@ -1,11 +1,6 @@
 ---
 layout: page
-name: Equal access to justice for all people? An Investigation
-of the Factors Driving the Distribution of Civil Legal Aid Grants
-custom-javascript-list:
-  - "https://d3js.org/d3.v4.js"
-  - "https://d3js.org/d3-scale-chromatic.v1.min.js"
-  - "https://d3js.org/d3-geo-projection.v2.min.js"
+name: Equal access to justice for all people? An Investigation of the Factors Driving the Distribution of Civil Legal Aid Grants
 ---
 
 Access to civil legal justice in the United States is largely an invisible issue,
