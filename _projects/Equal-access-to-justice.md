@@ -1,50 +1,16 @@
 ---
 layout: page
-name: Equal access to justice for all people?
+name: Equal access to justice for all people? An Investigation
+of the Factors Driving the Distribution of Civil Legal Aid Grants
 custom-javascript-list:
   - "https://d3js.org/d3.v4.js"
   - "https://d3js.org/d3-scale-chromatic.v1.min.js"
   - "https://d3js.org/d3-geo-projection.v2.min.js"
 ---
 
-<svg id="my_dataviz" width="800" height="600"></svg>
-
-<script>
-
-var svg = d3.select("svg"),
-  width = +svg.attr("width"),
-  height = +svg.attr("height");
-
-var path = d3.geoPath();
-var projection = d3.geoMercator()
-  .scale(70)
-  .center([0,20])
-  .translate([width / 2, height / 2]);
-
-var data = d3.map();
-var colorScale = d3.scaleThreshold()
-  .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
-  .range(d3.schemeBlues[7]);
-
-d3.queue()
-  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
-  .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
-  .await(ready);
-
-function ready(error, topo) {
-
-  svg.append("g")
-    .selectAll("path")
-    .data(topo.features)
-    .enter()
-    .append("path")
-      .attr("d", d3.geoPath()
-        .projection(projection)
-      )
-      .attr("fill", function (d) {
-        d.total = data.get(d.id) || 0;
-        return colorScale(d.total);
-      });
-    }
-
-</script>
+Access to civil legal justice in the United States is largely an invisible issue,
+though it affects approximately 70 percent of low-income households each year. This
+study is concerned with investigating the political, need-based, and capacity factors
+that drive the allocation of civil legal aid grants to recipient organizations. In addition to traditional regression models, regularized and geographically weighted regression techniques are used to as a robustness check in this analysis. The innovative dataset of webscraped observations of civil legal aid grantmaking from 2015-2017 includes both
+federal and NGO actors, allowing for analysis of factors contributing to receipt of not only greater amounts of aid, but of public versus private aid as well. Organization and location-specific data provide for a granular analytical perspective, contributing
+further to the existing literature of distributive politics. Overall, this study finds that organizational capacity is the most influential factor across all models. Further, key findings reveal avenues for further research into civil legal aid and strategies for ensuring equal access to justice for all.
