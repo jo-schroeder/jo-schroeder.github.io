@@ -19,7 +19,7 @@ In any case, the plan was set in motion. We didn't have interest in recreating B
 
 So I went to work. My first approach was based off of the text projects I was inspired by. I knew these projects started with a corpus. For my corpus, I knew exactly where to start. ABC posts bios of Bachelor contestants online.
 
-My first step was to scrape the bios and description of each contestant. 
+My first step was to scrape the bios and description of each contestant.
 MCMC methods
 Initial output, not great
 Mention creative license of other creators
