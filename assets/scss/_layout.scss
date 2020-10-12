@@ -74,15 +74,15 @@ hr {
 }
 
 .text {
-  white-space: nowrap; 
-  color: #FFFFFF;
+  white-space: wrap; 
+  color: white;
   font-size: 12px;
   position: absolute;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 5%;
+  left: 5%;
+  transform: translate(-5%, -5%);
+  -ms-transform: translate(-5%, -5%);
 }
 
 .pull-left {
