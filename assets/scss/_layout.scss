@@ -38,7 +38,7 @@ hr {
   margin: $small-spacing 0;
 }
 
-.container-image {
+.container-img {
   position: relative;
   width: 50%;
 }
@@ -61,7 +61,7 @@ hr {
   transition: .5s ease;
 }
 
-.container-image:hover .overlay {
+.container-img:hover .overlay {
   height: 100%;
 }
 
