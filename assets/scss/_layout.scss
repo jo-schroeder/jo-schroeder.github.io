@@ -53,8 +53,8 @@ hr {
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 800px;
+  height: 150px;
 }
 
 .overlay {
@@ -75,7 +75,7 @@ hr {
 
 .text {
   white-space: wrap; 
-  color: white;
+  color: #4CAF50;
   font-size: 12px;
   position: absolute;
   overflow: hidden;
