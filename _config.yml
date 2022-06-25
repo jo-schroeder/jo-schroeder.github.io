@@ -3,7 +3,7 @@ title_left    : "@data"
 title_right   : "tutorials"
 description   : ""
 keywords      : ""
-url           : https://joschro.com # site url
+url           : https://jo-schroeder.github.io/ # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
